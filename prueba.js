@@ -18,7 +18,7 @@ car3 = {
 };
 
 
-showCarDetails(car);
+showCarDetails(car, car2, car3);	
 
 function showCarDetails(car, car2, car3) {
     console.log(`Make: ${car.make}, Model: ${car.model}, Year: ${car.year}`);
