@@ -17,7 +17,7 @@ car3 = {
     year: 2019
 };
 
-// Function to show car details lll
+// Function to show car details lllsss
 showCarDetails(car, car2, car3);	
 
 function showCarDetails(car, car2, car3) {
