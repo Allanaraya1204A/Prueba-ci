@@ -1,17 +1,14 @@
 
+
 services:
   jenkins:
-    image: jenkins/jenkins:lts
-    container_name: jenkins
+    build: .
     ports:
       - "8080:8080"
       - "50000:50000"
     volumes:
       - jenkins_home:/var/jenkins_home
-    environment:
-      JENKINS_ADMIN_ID: allan
-      JENKINS_ADMIN_PASSWORD: admin123
-    restart: always
+    restart: unless-stopped
 
 volumes:
   jenkins_home:
